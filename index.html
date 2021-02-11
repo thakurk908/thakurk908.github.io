@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1024">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 	<title>Resume</title>
@@ -11,6 +11,12 @@
 	a{
 		text-decoration: none;
 	}
+	@media print {
+    .pagebreak {
+        clear: both;
+        page-break-after: always;
+    }
+}
 </style>
 <body>
 <div class="container pt-2 mt-3 " style="border: 1px solid black;">
@@ -19,13 +25,13 @@
 		<h4>B.Tech - Information Technology</h4>
 		<h4>Email : <a href="mailto:thakurkunal908@gmail.com">thakurkunal908@gmail.com</a></h4>
 		<h4>Contact : <a href="tel:+919828801006">+91-9828801006</a></h4>
+		<h4>Linkedin : <a href="https://www.linkedin.com/in/klaus908/">https://www.linkedin.com/in/klaus908/</a></h4>
 	<div class="card mb-3">
 	  <div class="card-header">
 	    <h4>CAREER OBJECTIVE</h4>
 	  </div>
 	  <div class="card-body">
-	      <p>Seeking an entry-level position to begin my career in a highly encouraging and
-professional environment</p>
+	      <p>Seeking a challenging position in an organization where I can use my talents and skills to grow and expand an organization as well as myself</p>
 	  </div>
 	</div>
 <div class="card mb-3">
@@ -36,7 +42,7 @@ professional environment</p>
       <ul>
       		<li><Strong>Assistant System Engineer - Trainee</Strong> at 
 Tata Consultancy Services - Kolkata | (September-2020 - Present) </li>
-      		<li><Strong>PHP Developer Intern</Strong> at cvDragon - Howrah | (June-2019 - September 2019</li>
+      		<li><Strong>PHP Developer Intern</Strong> at cvDragon - Howrah | (June-2019 - September 2019)</li>
       </ul>
   </div>
 </div>
@@ -57,8 +63,8 @@ Tata Consultancy Services - Kolkata | (September-2020 - Present) </li>
   <tbody>
     <tr>
       <td>B.TECH - INFORMATION TECHNOLOGY (2016-2020)</td>
-      <td>MAULANA ABUL KALAM AAZAD UNIVERSITY</td>
-      <td>MCKV INSTITUE OF ENGINEERING, LILUAH, HOWRAH</td>
+      <td>MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY</td>
+      <td>MCKV INSTITUTE OF ENGINEERING, LILUAH, HOWRAH</td>
       <td>8.46 CGPA</td>
     </tr>
     <tr>
@@ -77,16 +83,21 @@ Tata Consultancy Services - Kolkata | (September-2020 - Present) </li>
 </table>
   </div>
 </div>
+<div class="pagebreak"> </div>
 <div class="card mb-3">
   <div class="card-header">
     <h4>TECHNICAL SKILLS</h4>
   </div>
   <div class="card-body">
-      <ul>
+      <ul style="display: inline-block;">
       		<li>Python (Intermediate)</li>
       		<li>MySQL (Intermediate)</li>
       		<li>Flask (Beginner)</li>
-      		<li>PHP (Intermediate)</li>	
+      </ul>
+      <ul style="float: right;">
+      	    <li>PHP (Intermediate)</li>	
+      		<li>Github (Beginner)</li>
+      		<li>Bootstrap 4 (Intermediate)</li>
       </ul>
   </div>
 </div>
@@ -97,9 +108,7 @@ Tata Consultancy Services - Kolkata | (September-2020 - Present) </li>
   <div class="card-body">
   		<ul>
 		<li><strong><a href="https://github.com/thakurk908/Cloudsim">Final Year Project:</a></strong>
-An Optimized Task Scheduling Algorithm in Cloud Computing
-Under Guidance of: Dr. Indrajit De, Associate Professor, MCKVIE and Dr. Kinsuk
-Giri, Assistant Professor, NITTTR, Kolkata</li>
+To develop an Optimized Task Scheduling Algorithm in Cloud Computing and create a Dashboard to compare the results using Python & Cloudsim(Java). The algorithm was 22%-25% faster compared to Round Robin Algorithm and 6% - 8% faster than Shortest Job First Algorithm</li>
   			<li><strong><a href="https://github.com/thakurk908/Credit_Card_Acceptance">Credit Card Acceptance:</a></strong> This model will predict whether a credit card
 application will be accepted by bank based upon various data about the applicant.</li>
 <li><strong><a href="https://github.com/thakurk908/E-commerce-Website">E-commerce-Website:</a></strong> This E- commerce website is implemented using HTML, CSS, Bootstrap, php, MySQLi</li>
@@ -122,6 +131,7 @@ Analysis of Algorithms” by CMI, with a final score of 83%</li>
   		</ul>
   </div>
 </div>
+<div class="pagebreak"> </div>
 <div class="card mb-3">
   <div class="card-header">
     <h4>CERTIFICATIONS</h4>
@@ -131,6 +141,7 @@ Analysis of Algorithms” by CMI, with a final score of 83%</li>
   				<li>Programming, Data Structures and Algorithms using Python | NPTEL</li>
   				<li>Introduction to Modern Application Development | NPTEL</li>	
   				<li>Design and Analysis of Algorithms | NPTEL</li>
+  				<li>Full Stack Web Development with Flask | Linkedin Learning </li>
   		</ul>
   </div>
 </div>
